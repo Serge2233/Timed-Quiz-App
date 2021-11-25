@@ -1,68 +1,117 @@
 let questions = [
     {
     numb: 1,
-    question: "What does HTML stand for?",
-    answer: "Hyper Text Markup Language",
+    question: "On what island did ancient Greek civilization originate?",
+    answer: "Crete",
     options: [
-      "Hyper Text Preprocessor",
-      "Hyper Text Markup Language",
-      "Hyper Text Multiple Language",
-      "Hyper Tool Multi Language"
+      "Evia",
+      "Lesbos",
+      "Crete",
+      "Rhodes"
     ]
   },
     {
     numb: 2,
-    question: "What does CSS stand for?",
-    answer: "Cascading Style Sheet",
+    question: "What were the two most important city states in ancient Greece?",
+    answer: "Athens and Sparta",
     options: [
-      "Common Style Sheet",
-      "Colorful Style Sheet",
-      "Computer Style Sheet",
-      "Cascading Style Sheet"
+      "Corinth and Thebes",
+      "Sparta and Delphi",
+      "Thebes and Athens",
+      "Athens and Sparta"
     ]
   },
     {
     numb: 3,
-    question: "What does PHP stand for?",
-    answer: "Hypertext Preprocessor",
+    question: "Who was the most famous Greek poet?",
+    answer: "Homer",
     options: [
-      "Hypertext Preprocessor",
-      "Hypertext Programming",
-      "Hypertext Preprogramming",
-      "Hometext Preprocessor"
+      "Sappho",
+      "Homer",
+      "Hesiod",
+      "Pindar"
     ]
   },
     {
     numb: 4,
-    question: "What does SQL stand for?",
-    answer: "Structured Query Language",
+    question: "What place is known as the Queen of the Mediterranean Sea?",
+    answer: "Greece",
     options: [
-      "Stylish Question Language",
-      "Stylesheet Query Language",
-      "Statement Question Language",
-      "Structured Query Language"
+      "Greece",
+      "Egypt",
+      "Italy",
+      "Spain"
     ]
   },
     {
     numb: 5,
-    question: "What does XML stand for?",
-    answer: "eXtensible Markup Language",
+    question: "What did the Greeks call a way of thinking deeply about the world and the meaning of life?",
+    answer: "Philosophy",
     options: [
-      "eXtensible Markup Language",
-      "eXecutable Multiple Language",
-      "eXTra Multi-Program Language",
-      "eXamine Multiple Language"
+      "Ideology",
+      "Ontology",
+      "Theory",
+      "Philosophy"
     ]
   },
      {
      numb: 6,
-     question: "Your Question is Here",
-     answer: "Correct answer of the question is here",
+     question: "Who is the most famous ruler of ancient Athens?",
+     answer: "Pericles",
      options: [
-       "Option 1",
-       "option 2",
-       "option 3",
-       "option 4"
+       "Cleisthenes",
+       "Cimon",
+       "Pericles",
+       "Leonidas"
      ]
- }
+ },
+
+ {
+  numb: 7,
+  question: "How many years did the Peloponnesian War last?",
+  answer: "27 years",
+  options: [
+    "27 years",
+    "5 years",
+    "14 years",
+    "21 years"
+  ]
+},
+
+{
+  numb: 8,
+  question: "In which civilization did the first Olympic games take place?",
+  answer: "Ancient Greece",
+  options: [
+    "Ancient Rome",
+    "Ancient Greece",
+    "Ancient Egypt",
+    "Ancient Syria"
+  ]
+},
+
+{
+  numb: 9,
+  question: "Where did the Peloponnesian War happen?",
+  answer: "Southern Europe",
+  options: [
+    "Northern Europe",
+    "Western Europe",
+    "Eastern Europe",
+    "Southern Europe"
+  ]
+},
+
+{
+  numb: 10, 
+  question: "Who paid for the armor and weapons for the Greek army?",
+  answer: "The soldiers bought their own",
+  options: [
+    "The soldiers bought their own",
+    "The city state",
+    "Financial elites",
+    "The goverment"
+  ]
+}
+
 ];

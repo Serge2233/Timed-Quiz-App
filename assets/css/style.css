@@ -57,6 +57,10 @@ body{
     background: #fff;
     cursor: pointer;
   }
+
+  .scores:hover {
+    background: #ff0000b7;
+  }
   
 
 .info_box{

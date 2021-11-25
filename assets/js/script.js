@@ -2,6 +2,9 @@ const start_btn = document.querySelector(".start_btn button");
 const info_box = document.querySelector(".info_box");
 const exit_btn = info_box.querySelector(".buttons .quit");
 const continue_btn = info_box.querySelector(".buttons .restart");
+var saveBtn = document.getElementById("save");
+var initialsEl = document.getElementById("initials");
+var time = questions.length * 15;
 const quiz_box = document.querySelector(".quiz_box");
 const result_box = document.querySelector(".result_box");
 const option_list = document.querySelector(".option_list");
@@ -191,3 +194,42 @@ function queCounter(index){
     let totalQueCounTag = '<span><p>'+ index +'</p> of <p>'+ questions.length +'</p> Questions</span>';
     bottom_ques_counter.innerHTML = totalQueCounTag;  //adding new span tag inside bottom_ques_counter
 }
+
+function saveHighscore() {
+    // get value of input box
+    var initials = initialsEl.value.trim();
+  
+    // make sure value wasn't empty
+    if (initials !== "") {
+      // get saved scores from localstorage, or if not any, set to empty array
+      var highscores =
+        JSON.parse(window.localStorage.getItem("highscores")) || [];
+  
+      // format new score object for current user
+      var newScore = {
+        score: time,
+        initials: initials
+      };
+  
+      // save to localstorage
+      highscores.push(newScore);
+      window.localStorage.setItem("highscores", JSON.stringify(highscores));
+  
+      // redirect to next page
+      window.location.href = "highscore.html";
+    }
+  }
+  
+  function checkForEnter(event) {
+    // "13" represents the enter key
+    if (event.key === "Enter") {
+      saveHighscore();
+    }
+  }
+
+// user clicks button to submit initials
+window.onload = function () {
+    saveBtn.onclick = saveHighscore;
+}
+
+initialsEl.onkeyup = checkForEnter;
